@@ -377,6 +377,7 @@
     <Content Include="assets\pluginzero\toastr\toastr.min.js" />
     <Content Include="CategoriaPage.aspx" />
     <Content Include="Inicio.aspx" />
+    <Content Include="js\CategoriaPage.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -389,6 +390,7 @@
     </Compile>
     <Compile Include="Home.Master.cs">
       <DependentUpon>Home.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Home.Master.designer.cs">
       <DependentUpon>Home.Master</DependentUpon>
@@ -504,6 +506,16 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaEntidad\CapaEntidad.csproj">
+      <Project>{38f5fc80-a018-47de-a079-d84e2265a238}</Project>
+      <Name>CapaEntidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaNegocio\CapaNegocio.csproj">
+      <Project>{c49ee60d-189a-4e3f-8049-267fbdba0882}</Project>
+      <Name>CapaNegocio</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
